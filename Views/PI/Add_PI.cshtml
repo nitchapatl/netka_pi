@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewData["Title"] = "Add Process Issue Log";
+}
+
+<div class="page-header">
+    <div class="pull-left">
+        <h1>Add Process Issue Log</h1>
+    </div>
+    <div class="pull-right">
+    </div>
+</div>
+<div class="breadcrumbs">
+    <ul>
+        <li>
+            <a href="#">Home</a>
+            <i class="icon-angle-right"></i>
+        </li>
+        <li>
+            <a href="#">PI Issue</a>
+            <i class="icon-angle-right"></i>
+        </li>
+        <li>
+            <a href="#">Add Issue Log</a>
+        </li>
+    </ul>
+    <div class="close-bread">
+        <a href="#"><i class="icon-remove"></i></a>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <div class="box box-bordered">
+            <div class="box-title">
+                <h3><i class="icon-th-list"></i> Issue</h3>
+            </div>
+            <div class="box-content nopadding">
+                <form action="#" method="POST" class='form-horizontal form-bordered'>
+                    <div class="control-group">
+                        <label for="textfield" class="control-label">Originator name</label>
+                        <div class="controls">
+                            <input type="text" name="originator_name" id="originator_name" placeholder="" class="input-xlarge">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="textfield" class="control-label">Date Raised</label>
+                        <div class="controls">
+                            <input type="text" name="date_raised" id="date_raised" placeholder="" class="input-medium datepicker">
+                            <span class="help-block">Date format -> mm/dd/yy</span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="textfield" class="control-label">Item Name</label>
+                        <div class="controls">
+                            <input type="text" name="item_name" id="item_name" placeholder="" class="input-xlarge">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="textfield" class="control-label">Title</label>
+                        <div class="controls">
+                            <input type="text" name="title" id="title" placeholder="" class="input-xlarge">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="select" class="control-label">Process</label>
+                        <div class="controls">
+                            <select name="process" id="process" class='input-xlarge'>
+                                <option value="1">Option-1</option>
+                                <option value="2">Option-2</option>
+                                <option value="3">Option-3</option>
+                                <option value="4">Option-4</option>
+                                <option value="5">Option-5</option>
+                                <option value="6">Option-6</option>
+                                <option value="7">Option-7</option>
+                                <option value="8">Option-8</option>
+                                <option value="9">Option-9</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="textarea" class="control-label">Issue Description</label>
+                        <div class="controls">
+                            <textarea name="issue_description" id="issue_description" rows="5" class="input-block-level"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $('#date_raised').datepicker({format: 'mm/dd/yy'});
+    </script>
+}
+
