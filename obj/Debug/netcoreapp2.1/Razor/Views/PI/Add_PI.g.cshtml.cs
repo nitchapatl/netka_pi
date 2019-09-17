@@ -25,7 +25,7 @@ using netka_pi.Models;
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"516e6985ad49c3188ceecb75f60a633823b6fc8b", @"/Views/PI/Add_PI.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"447b23fd5e703f0710c471778b1fcdc96653aefa", @"/Views/_ViewImports.cshtml")]
-    public class Views_PI_Add_PI : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<netka_pi.Models.AddPIData>
+    public class Views_PI_Add_PI : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<netka_pi.Models.IssueLogData>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "1", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "2", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -150,7 +150,7 @@ using netka_pi.Models;
                                     ");
             EndContext();
             BeginContext(3485, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78fcedfc3625481ba731106c97f59c21", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6e96673f76b4b92b35c6c977e70a819", async() => {
                 BeginContext(3503, 8, true);
                 WriteLiteral("Option-1");
                 EndContext();
@@ -172,7 +172,7 @@ using netka_pi.Models;
             WriteLiteral("\r\n                                    ");
             EndContext();
             BeginContext(3558, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a5baf5bc4b5d4d28a5caa37833cce67a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a387b26aaa5481e9e34c21f975b2d89", async() => {
                 BeginContext(3576, 8, true);
                 WriteLiteral("Option-2");
                 EndContext();
@@ -194,7 +194,7 @@ using netka_pi.Models;
             WriteLiteral("\r\n                                    ");
             EndContext();
             BeginContext(3631, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31796dbc2b424415bc50c90a3829922b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f6cae777bc14b3487234f3e178b4149", async() => {
                 BeginContext(3649, 8, true);
                 WriteLiteral("Option-3");
                 EndContext();
@@ -216,7 +216,7 @@ using netka_pi.Models;
             WriteLiteral("\r\n                                    ");
             EndContext();
             BeginContext(3704, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa39f5d9a0e3441a94f8db0ec5586a99", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63abc3a95c7e45c382392da4a978afe1", async() => {
                 BeginContext(3722, 8, true);
                 WriteLiteral("Option-4");
                 EndContext();
@@ -238,7 +238,7 @@ using netka_pi.Models;
             WriteLiteral("\r\n                                    ");
             EndContext();
             BeginContext(3777, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b91da71029c457cb02a39b4c8dd256a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "243cb395b27b41ea8ce2d43116c75f23", async() => {
                 BeginContext(3795, 8, true);
                 WriteLiteral("Option-5");
                 EndContext();
@@ -260,7 +260,7 @@ using netka_pi.Models;
             WriteLiteral("\r\n                                    ");
             EndContext();
             BeginContext(3850, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "262d4942bf6e47f99a70a5f932b85754", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a517896c29144c3a9ed9669234112c0", async() => {
                 BeginContext(3868, 8, true);
                 WriteLiteral("Option-6");
                 EndContext();
@@ -282,7 +282,7 @@ using netka_pi.Models;
             WriteLiteral("\r\n                                    ");
             EndContext();
             BeginContext(3923, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01383f055ad64349aa10276d5679f34d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fac2a19c65e74c729775e60433690bde", async() => {
                 BeginContext(3941, 8, true);
                 WriteLiteral("Option-7");
                 EndContext();
@@ -304,7 +304,7 @@ using netka_pi.Models;
             WriteLiteral("\r\n                                    ");
             EndContext();
             BeginContext(3996, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f6219ea17744e409a4a4aad964b8df7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f54a9a7cfd1b4b6dace17dff60e02a99", async() => {
                 BeginContext(4014, 8, true);
                 WriteLiteral("Option-8");
                 EndContext();
@@ -326,7 +326,7 @@ using netka_pi.Models;
             WriteLiteral("\r\n                                    ");
             EndContext();
             BeginContext(4069, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b8f13eabce0430b96095620a4f14cf5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e270502d2b7493aaf5da83d1534da05", async() => {
                 BeginContext(4087, 8, true);
                 WriteLiteral("Option-9");
                 EndContext();
@@ -389,7 +389,7 @@ using netka_pi.Models;
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<netka_pi.Models.AddPIData> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<netka_pi.Models.IssueLogData> Html { get; private set; }
     }
 }
 #pragma warning restore 1591

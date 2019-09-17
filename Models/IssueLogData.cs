@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace netka_pi.Models
 {
-    public class AddPIData
+    public class IssueLogData
     {
         public string Issue_No { get; set; }
         public string Title { get; set; }

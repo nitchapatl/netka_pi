@@ -14,6 +14,7 @@ namespace netka_pi.Controllers
     {
         public IActionResult Index()
         {
+            
             return View();
         }
 
@@ -31,7 +32,7 @@ namespace netka_pi.Controllers
         public async Task<ActionResult> add_pi_process(string Issue_No, string Originator_Name, string Date_Raised, string Item_Name, string Title, string Process, string Issue_Description)
         {
             var currentTimestamp = DateTime.UtcNow.ToString("MM/dd/yyyy HH:mm:ss");
-            var addPIData = new AddPIData() {
+            var addPIData = new IssueLogData() {
                 Issue_No = Issue_No,
                 Title = Title,
                 Originator_Name = Originator_Name,
@@ -51,7 +52,33 @@ namespace netka_pi.Controllers
               .Child("IssueLog/" + Issue_No)
               .PostAsync(addPIData);
 
-            return RedirectToAction("Index", "PI");
+            return RedirectToAction("IssueLog", "PI");
+        }
+        
+        public async Task<ActionResult> IssueLog()
+        {
+            var firebaseClient = new FirebaseClient("https://netkapifirebase.firebaseio.com");
+
+            //Retrieve data from Firebase
+            var IssueLog = await firebaseClient
+                .Child("IssueLog")
+                .Child("Issue1")
+                .OnceAsync<IssueLogData>();
+
+            //IssueLogData recvIssueLog = new IssueLogData();
+            var timestamp = new DateTime();
+
+            //Convert JSON data to original datatype
+            foreach (var data in IssueLog)
+            {
+                //recvIssueLog.Issue_No = data.Object.Issue_No;
+                timestamp = (Convert.ToDateTime(data.Object.TimestampUtc).ToLocalTime());
+            }
+
+
+            //Pass data to the view
+            ViewBag.timestamp = timestamp;
+            return View();
         }
 
     }
