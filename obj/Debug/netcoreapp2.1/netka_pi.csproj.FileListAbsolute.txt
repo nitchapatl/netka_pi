@@ -5,7 +5,6 @@ D:\bow\project\netka_pi\bin\Debug\netcoreapp2.1\netka_pi.dll
 D:\bow\project\netka_pi\bin\Debug\netcoreapp2.1\netka_pi.pdb
 D:\bow\project\netka_pi\bin\Debug\netcoreapp2.1\netka_pi.Views.dll
 D:\bow\project\netka_pi\bin\Debug\netcoreapp2.1\netka_pi.Views.pdb
-D:\bow\project\netka_pi\obj\Debug\netcoreapp2.1\netka_pi.csprojAssemblyReference.cache
 D:\bow\project\netka_pi\obj\Debug\netcoreapp2.1\netka_pi.csproj.CoreCompileInputs.cache
 D:\bow\project\netka_pi\obj\Debug\netcoreapp2.1\netka_pi.RazorAssemblyInfo.cache
 D:\bow\project\netka_pi\obj\Debug\netcoreapp2.1\netka_pi.RazorAssemblyInfo.cs
@@ -33,3 +32,4 @@ D:\bow\project\netka_pi\obj\Debug\netcoreapp2.1\netka_pi.csproj.CopyComplete
 D:\bow\project\netka_pi\obj\Debug\netcoreapp2.1\Razor\Views\PI\Add_PI.g.cshtml.cs
 D:\bow\project\netka_pi\obj\Debug\netcoreapp2.1\Razor\Views\PI\Index.g.cshtml.cs
 D:\bow\project\netka_pi\obj\Debug\netcoreapp2.1\Razor\Views\PI\IssueLog.g.cshtml.cs
+D:\bow\project\netka_pi\obj\Debug\netcoreapp2.1\netka_pi.csprojAssemblyReference.cache

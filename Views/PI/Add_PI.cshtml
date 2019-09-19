@@ -1,5 +1,4 @@
-﻿@model netka_pi.Models.AddPIData
-
+﻿@model netka_pi.Models.IssueLogData
 @{
     ViewData["Title"] = "Add Issue Log";
 }
@@ -18,7 +17,7 @@
             <i class="icon-angle-right"></i>
         </li>
         <li>
-            <a href="#">PI Issue</a>
+            <a href="#">Process Issue</a>
             <i class="icon-angle-right"></i>
         </li>
         <li>
@@ -41,7 +40,7 @@
                         <div class="control-group">
                             <label for="IssueNO" class="control-label">Issue No.</label>
                             <div class="controls">
-                                <input type="text" name="Issue_No" id="Issue_No" placeholder="" class="input-small">
+                                <input type="text" name="Issue_No" id="Issue_No" placeholder="" class="input-small" value="@ViewBag.new_issue_no">
                             </div>
                         </div>
                         <div class="control-group">
@@ -73,15 +72,31 @@
                             <label for="Process" class="control-label">Process</label>
                             <div class="controls">
                                 <select name="Process" id="Process" class='input-xlarge'>
-                                    <option value="1">Option-1</option>
-                                    <option value="2">Option-2</option>
-                                    <option value="3">Option-3</option>
-                                    <option value="4">Option-4</option>
-                                    <option value="5">Option-5</option>
-                                    <option value="6">Option-6</option>
-                                    <option value="7">Option-7</option>
-                                    <option value="8">Option-8</option>
-                                    <option value="9">Option-9</option>
+                                    <option value="">Please select</option>
+                                    <option value="Agreement Management (AM)">Agreement Management (AM)</option>
+                                    <option value="Capacity and Availability Management (CAM)">Capacity and Availability Management (CAM)</option>
+                                    <option value="Causal Analysis and Resolution (CAR)">Causal Analysis and Resolution (CAR)</option>
+                                    <option value="Configuration Management (CM)">	Configuration Management (CM)</option>
+                                    <option value="Decision Analysis and Resolution (DAR)">Decision Analysis and Resolution (DAR)</option>
+                                    <option value="Integrated Project Management (IPM)">Integrated Project Management (IPM)</option>
+                                    <option value="Measurement and Analysis (MA)">Measurement and Analysis (MA)</option>
+                                    <option value="Organizational Process Definition (OPD)">Organizational Process Definition (OPD)</option>
+                                    <option value="Organizational Process Focus (OPF)">Organizational Process Focus (OPF)</option>
+                                    <option value="Organizational Performance Management (OPM)">Organizational Performance Management (OPM)</option>
+                                    <option value="Organizational Process Performance (OPP)">Organizational Process Performance (OPP)</option>
+                                    <option value="Organizational Training (OT)">Organizational Training (OT)</option>
+                                    <option value="Product Integration (PI)">Product Integration (PI)</option>
+                                    <option value="Project Monitoring and Control (PMC)">Project Monitoring and Control (PMC)</option>
+                                    <option value="Project Planning (PP)">Project Planning (PP)</option>
+                                    <option value="Process and Product Quality Assurance (PPQA)">Process and Product Quality Assurance (PPQA)</option>
+                                    <option value="Quantitative Project Management (QPM)">Quantitative Project Management (QPM)</option>
+                                    <option value="Requirements Development (RD)">Requirements Development (RD)</option>
+                                    <option value="Requirements Management (REQM)">Requirements Management (REQM)</option>
+                                    <option value="Risk Management (RSKM)">Risk Management (RSKM)</option>
+                                    <option value="Supplier Agreement Management (SAM)">Supplier Agreement Management (SAM)</option>
+                                    <option value="Technical Solution (TS)">Technical Solution (TS)</option>
+                                    <option value="Validation (VAL)">Validation (VAL)</option>
+                                    <option value="Verification (VER)">Verification (VER)</option>
                                 </select>
                             </div>
                         </div>

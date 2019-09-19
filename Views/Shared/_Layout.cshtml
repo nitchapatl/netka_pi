@@ -27,6 +27,8 @@
     <!-- jQuery UI -->
     <link rel="stylesheet" href="~/css/plugins/jquery-ui/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="~/css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+    <!-- dataTables -->
+    <link rel="stylesheet" href="css/plugins/datatable/TableTools.css">
     <!-- PageGuide -->
     <link rel="stylesheet" href="~/css/plugins/pageguide/pageguide.css">
     <!-- Fullcalendar -->
@@ -69,6 +71,12 @@
     <script src="~/js/plugins/vmap/jquery.vmap.sampledata.js"></script>
     <!-- Bootbox -->
     <script src="~/js/plugins/bootbox/jquery.bootbox.js"></script>
+    <!-- dataTables -->
+    <script src="js/plugins/datatable/jquery.dataTables.min.js"></script>
+    <script src="js/plugins/datatable/TableTools.min.js"></script>
+    <script src="js/plugins/datatable/ColReorder.min.js"></script>
+    <script src="js/plugins/datatable/ColVis.min.js"></script>
+    <script src="js/plugins/datatable/jquery.dataTables.columnFilter.js"></script>
     <!-- Flot -->
     <script src="~/js/plugins/flot/jquery.flot.min.js"></script>
     <script src="~/js/plugins/flot/jquery.flot.bar.order.min.js"></script>
@@ -231,14 +239,14 @@
         <div id="left">
             <div class="subnav">
                 <div class="subnav-title">
-                    <a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>PI Issue</span></a>
+                    <a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>Process Issue</span></a>
                 </div>
                 <ul class="subnav-menu">
                     <li>
-                        <a asp-action="Add_PI" asp-controller="PI">Add PI</a>
+                        <a asp-action="Add_PI" asp-controller="PI">Add Issue Log</a>
                     </li>
                     <li>
-                        <a asp-action="Index" asp-controller="PI">Issue log</a>
+                        <a asp-action="IssueLog" asp-controller="PI">Issue log</a>
                     </li>
                 </ul>
             </div>

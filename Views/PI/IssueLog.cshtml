@@ -6,9 +6,7 @@
 
 <h2>IssueLog</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
 <div class="breadcrumbs">
     <ul>
         <li>
@@ -16,15 +14,22 @@
             <i class="icon-angle-right"></i>
         </li>
         <li>
-            <a href="#">Dashboard</a>
+            <a href="#">Process Issue</a>
+            <i class="icon-angle-right"></i>
+        </li>
+        <li>
+            <a href="#">Issue Log</a>
         </li>
     </ul>
     <div class="close-bread">
         <a href="#"><i class="icon-remove"></i></a>
     </div>
 </div>
+
+
 <div class="row-fluid">
     <div class="span12">
+
 
         <div class="box box-color box-bordered">
             <div class="box-title">
@@ -34,88 +39,44 @@
                 </h3>
             </div>
             <div class="box-content nopadding">
-                <table class="table table-hover table-nomargin">
+                <table id="IssueLogTable" class="table table-hover table-nomargin table-bordered dataTable">
                     <thead>
                         <tr>
                             <th>Issue No.</th>
                             <th>Title</th>
+                            <th class='hidden-1024'>Issue Description</th>
                             <th class='hidden-350'>Originator</th>
                             <th class='hidden-1024'>Process</th>
-                            <th class='hidden-1024'>Category</th>
-                            <th class='hidden-1024'>Severity</th>
+                            <!--<th class='hidden-1024'>Category</th>-->
+                            <!--<th class='hidden-1024'>Severity</th>-->
                             <th class='hidden-1024'>Status</th>
                             <th class='hidden-1024'>Date Raised</th>
-                            <th class='hidden-1024'>Date Resolved</th>
+                            <!--<th class='hidden-1024'>Date Resolved</th>-->
                             <th class='hidden-1024'>Issue Age</th>
-                            <th class='hidden-1024'>Remark</th>
+                            <!--<th class='hidden-1024'>Remark</th>-->
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Issue1</td>
-                            <td> bug1 </td>
-                            <td class='hidden-350'> bo </td>
-                            <td class='hidden-1024'>5</td>
-                            <td class='hidden-1024'>2</td>
-                            <td class='hidden-1024'>medium</td>
-                            <td class='hidden-1024'>new</td>
-                            <td class='hidden-1024'>15/08/2019</td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'>test</td>
-                        </tr>
-                        <tr>
-                            <td>Issue2</td>
-                            <td></td>
-                            <td class='hidden-350'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                        </tr>
-                        <tr>
-                            <td>Issue3</td>
-                            <td></td>
-                            <td class='hidden-350'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                        </tr>
-                        <tr>
-                            <td>Issue4</td>
-                            <td></td>
-                            <td class='hidden-350'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                        </tr>
-                        <tr>
-                            <td>Issue5</td>
-                            <td></td>
-                            <td class='hidden-350'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                            <td class='hidden-1024'></td>
-                        </tr>
+                        @foreach (var data in ViewBag.IssueLog)
+                        {
+
+                            <tr>
+                                <td>@data.Issue_No</td>
+                                <td>@data.Title</td>
+                                <td class='hidden-1024'>@data.Issue_Description</td>
+                                <td class='hidden-350'>@data.Originator_Name</td>
+                                <td class='hidden-1024'>@data.Process</td>
+                                <!--<td class='hidden-1024'>@data.Category</td>-->
+                                <!--<td class='hidden-1024'>@data.Severity</td>-->
+                                <td class='hidden-1024'>@data.Status</td>
+
+
+                                <td class='hidden-1024'>@data.Date_Raised</td>
+                                <!--<td class='hidden-1024'>@data.Date_Resolved</td>-->
+                                <td class='hidden-1024'></td>
+                                <!--<td class='hidden-1024'></td>-->
+                            </tr>
+                        }
                     </tbody>
                 </table>
             </div>
@@ -124,4 +85,14 @@
     </div>
 </div>
 
-Time Stamp: @ViewBag.timestamp
+
+@section Scripts {
+
+    
+}
+
+
+
+
+
+
